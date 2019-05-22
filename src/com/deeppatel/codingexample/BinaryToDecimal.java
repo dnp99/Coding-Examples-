@@ -14,10 +14,22 @@ public class BinaryToDecimal {
     /**
      * @param args the command line arguments
      */
+//	Highest power of 2 that divides a number represented in binary
+//	Given a binary string str, the task is to find the largest power of 2 that divides the decimal equivalent of the given binary number.
+//
+//	Examples:
+//
+//	Input: str = “100100”
+//	Output: 2
+//	22 = 4 is the highest power of 2 that divides 36 (100100).
+//
+//	Input: str = “10010”
+//	Output: 1
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println(getDecimal("100100"));
-        System.out.println("RES:"+getResult(getDecimal("100100")));
+        String number = "10010";
+        System.out.println(getDecimal(number));
+        System.out.println("RES:" + getResult(getDecimal(number)));
     }
 
     public static int getDecimal(String binary) {
@@ -33,14 +45,14 @@ public class BinaryToDecimal {
         return (dec);
     }
 
-    public static  int getResult(int decimal) {
+    public static int getResult(int decimal) {
         int flag = 0;
-        int result=0;
+        int result = 0;
 
         double temp = 0;
         for (int i = 0; Math.pow(2, i) < decimal; i++) {
             if (decimal % (int) (Math.pow(2, i)) == 0) {
-                result=i;
+                result = i;
             }
 
         }
