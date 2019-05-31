@@ -5,6 +5,8 @@
  */
 package com.deeppatel.codingexample;
 
+import javafx.scene.Node;
+
 /**
  *
  * @author patel
@@ -29,9 +31,11 @@ No character repeats
 public class MostRepeatedLeftMost {
     	public static void main(String[] args)
 	{
+            
 		String temp="deeppzz";
-		int pos=findLeftMostChar(temp);
-		System.out.println("Most repeated left most character: "+temp.charAt(pos));
+                temp.concat("11111");
+                int pos=findLeftMostChar(temp);
+		System.out.println("Most repeated left most character: "+temp.charAt(pos) +" \nOriginal String:"+temp);
 	}
 	
 	public static int findLeftMostChar(String temp) 
