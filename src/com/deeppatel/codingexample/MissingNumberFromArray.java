@@ -5,6 +5,8 @@
  */
 package com.deeppatel.codingexample;
 
+import java.util.Arrays;
+
 /**
  *
  * @author patel
@@ -18,8 +20,9 @@ public class MissingNumberFromArray {
         int[] data1 = new int[]{1,2,3,5};
         //missing 2 number
         int[] data2 = new int[]{1,2,3};
-         
-        getMissingNumber(data2, 5);
+        int size=5;
+         System.out.println("input: "+Arrays.toString(data2)+" Size:"+size);
+        getMissingNumber(data2, size);
         
     }
     
@@ -57,8 +60,8 @@ public class MissingNumberFromArray {
             }
             System.out.println("Sum of missing numbers: "+missingNumTotal);
             int[] num= new int[count];
-            System.out.println("Missing Numbers: ");
-            for(int i=1;i<size;i++)
+            System.out.println("Missing Numbers are: ");
+            for(int i=1;i<=size;i++)
             {
                 boolean flag=true;
                 for(int j=0;j<data.length;j++)
