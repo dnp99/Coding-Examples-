@@ -56,8 +56,11 @@ public class Graph_To_Adjacency_List {
     //Print Graph
     static void printGraph(Graph graph)
     {
+        int i1;
+        //i1.println();
         for(int i=0;i<graph.v;i++)
         {
+            
             System.out.println("Adjacency list of vertex : "+i);
             System.out.println(" Head");
             for(Integer data  : graph.adjList[i])
