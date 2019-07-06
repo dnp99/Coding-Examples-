@@ -50,7 +50,7 @@ public class MostRepeatedLeftMost {
 					return i;
 				}
 				
-			}
+			}    
 		}
 		return -1;
 	}
